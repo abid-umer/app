@@ -1,0 +1,17 @@
+//- nav 
+//-     ul 
+//-         block links
+//-         li 
+//-             a(href="/") Home
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(href='#') Assignment
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarText.collapse.navbar-collapse
+    block links
+        ul.navbar-nav.mr-auto
+            li.nav-item.active
+                a.nav-link(href='/')
+                    | Home 
+                    span.sr-only (current)

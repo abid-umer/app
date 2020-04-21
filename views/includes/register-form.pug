@@ -1,0 +1,22 @@
+form(method="post" action="/register")
+    table 
+        tr
+            td Username 
+            td 
+                input(type="text" class="form-control mt-2 ml-1" name="username" required)
+        tr 
+            td Fullname 
+            td 
+                input(type="text" class="form-control mt-2 ml-1" name="fullname" required)
+        tr 
+            td Password 
+            td 
+                input(type="password" class="form-control mt-2 ml-1" name="password" required)
+        tr 
+            td Confirm password 
+            td 
+                input(type="password" class="form-control mt-2 ml-1" name="cpass" required)
+        tr 
+            td
+            td
+                input(type="submit" class="btn btn-primary btn-block mt-2 ml-1" value="Register" id="register")

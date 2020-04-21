@@ -1,0 +1,23 @@
+extends layout
+
+mixin message(opp, name)
+    if(opp)
+        .container.mt-3
+            h1.greeting Logged in as 
+                span=name 
+    else 
+        .container.mt-3
+            h1.greeting Welcome 
+                span=name 
+                |  to our website
+
+
+append links 
+    span.navbar-text
+        a(href="/loggout") Loggout 
+
+
+block content
+    .dashboard 
+        .user 
+            +message(opp, name)

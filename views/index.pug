@@ -1,0 +1,12 @@
+extends layout
+block content 
+    div.container.mt-5
+        .row
+            .col-md-6.col-12.col-sm-12
+                .login-panel 
+                    h2(class="text-center") Login
+                    include includes/login-form 
+            .col-12.col-sm-12.col-md-6
+                .register-panel
+                    h2(class="text-center") Register
+                    include includes/register-form
